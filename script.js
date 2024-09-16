@@ -2,9 +2,10 @@ const buttons = Array.from(document.querySelectorAll(".button"));
 const screen = document.querySelector(".screen");
 let displayContent = "";
 
-for (button of buttons){
+
+for (let button of buttons){
     button.addEventListener("click",(button) => {
-        buttonContent = button.originalTarget.textContent;
+        buttonContent = button.target.textContent;
         if (buttonContent === "C"){
             displayContent = "";
             screen.textContent = displayContent;
