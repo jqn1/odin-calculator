@@ -14,18 +14,18 @@ function divide(a, b) {
     return a / b;
 }
 
-function operate(operator,a,b) {
+function operate(a, operator, b) {
     a = Number(a);
     b = Number(b);
     switch (operator) {
         case "+":
-            return add(a,b);
+            return (add(a,b));
         case "-":
-            return subtract(a,b);
+            return (subtract(a,b));
         case "/":
-            return divide(a,b);
+            return (divide(a,b));
         case "*":
-            return multiply(a,b);
+            return (multiply(a,b));
     }
 
 }
